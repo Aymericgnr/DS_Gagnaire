@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Formulaire utilisateur{% endblock %}
+
+{% block body %}
+<center>
+<h1>📜Formulaire utilisateur📜</h1>
+<br>
+
+<div class="card text-white bg-info mb-3" style="max-width: 40rem;">
+  <div class="card-body">
+    <p class="lead">Le login est : {{email}}</p>
+    <p class="lead">{{message}}</p>
+  </div>
+</div>
+</center>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}📝Page de connexion 📝{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>📝 Se connecter :</h1>
+</div>
+    <center>
+    <div class="card text-white bg-success mb-3" style="max-width: 50rem;">
+    <div class="card-body">
+    <form method="post" action="/login">
+    <p>
+    <tr>
+      <div class="form-group">
+      <label for="exampleInput" class="form-label mt-1">email</label>
+      <input type="text" class="form-control" name="email" id="email" placeholder="email">
+      <div class="form-group">
+      <label for="exampleInputPassword1" class="form-label mt-1">Password</label>
+      <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+      </div
+    </tr>
+    </p>
+    </div>
+    <button type="submit" class="btn btn-success">Connexion</button>
+    </center>
+    </form>
+
+</div>
+
+
+{% endblock %}

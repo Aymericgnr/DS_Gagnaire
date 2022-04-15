@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}📌Liste des taches📌{% endblock %}
+
+{% block body %}
+<center>
+<h1>📌 Liste des taches 📌</h1>
+</center>
+<br>
+<br>
+<table class="table table-info">
+  <thead>
+    <tr>
+      <th scope="col">Description</th>
+      <th scope="col">Date</th>
+      <th scope="col">Priorite</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for une_tache in lst_tache %}
+    <tr class="table-active">
+      <td>{{ une_tache.description }} </td>
+      <td>{{ une_tache.date }}</td>
+      <td>{{ une_tache.priorite }}</td>
+      <td><a href="/supprTache/{{ une_date.id }}"> <input type="button" class="btn btn-danger" value="Supprimer"> </a></td>
+    </tr>
+  </tbody>
+  {% endfor %}
+</table>
+
+{% endblock %}
